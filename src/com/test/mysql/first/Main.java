@@ -12,7 +12,7 @@ public class Main {
         databaseService.createConnection();
 
 
-         */
+
         int nr;
         Scanner scanner = new Scanner(System.in);
         System.out.println("(Press 1 -> Print all  " +
