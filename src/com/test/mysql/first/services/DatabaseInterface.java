@@ -1,6 +1,6 @@
-package de.vogella.mysql.first.services;
+package com.test.mysql.first.services;
 
-import de.vogella.mysql.first.models.User;
+import com.test.mysql.first.models.User;
 
 import java.sql.SQLException;
 import java.util.List;

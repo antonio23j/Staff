@@ -1,6 +1,6 @@
-package de.vogella.mysql.first.services;
+package com.test.mysql.first.services;
 
-import de.vogella.mysql.first.models.User;
+import com.test.mysql.first.models.User;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -34,9 +34,10 @@ public class DatabaseService implements DatabaseInterface {
 
     @Override
     public void insert(User user) throws SQLException {
-        PreparedStatement preparedStatement = connect.prepareStatement("insert into User values(default,?,?)");
-        preparedStatement.setString(1,user.getName());
-        preparedStatement.setInt(2,user.getAge());
+        PreparedStatement preparedStatement = connect.prepareStatement("insert into User values(?,?,?)");
+        preparedStatement.setInt(1,user.getId());
+        preparedStatement.setString(2,user.getName());
+        preparedStatement.setInt(3,user.getAge());
         preparedStatement.execute();
     }
 

@@ -1,4 +1,4 @@
-package de.vogella.mysql.first.models;
+package com.test.mysql.first.models;
 
 public class User {
     private int id;
@@ -9,6 +9,9 @@ public class User {
         this.id = id;
         this.name = name;
         this.age = age;
+    }
+
+    public User() {
     }
 
     public User(int id, String name, int age) {
