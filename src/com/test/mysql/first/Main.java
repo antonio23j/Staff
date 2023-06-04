@@ -20,7 +20,7 @@ public class Main {
                 "\nPress 3 -> Find a user" +
                 "\nPress 4 -> Delete user" +
                 "\nPress 5 -> Update a user" +
-                "\nPress 0 -> Close program)");
+                "\nPress 0 -> Close the program)");
         boolean hasFinished = false;
         while (!hasFinished) {
             System.out.println("Press a number:");
